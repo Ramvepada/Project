@@ -3,7 +3,19 @@
 
 /* Bootstrap card refinements */
 .card { border: 2px solid #3c2f2f; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg,#fffdf6,#fff6e3); }
-.card-img-top { height: 160px; object-fit: contain; padding: 12px; background: #fff; }
+.card-img-top { height: 160px; object-fit: contain;  padding: 12px; background: #fff; }
+
+/* Specific styling for me.png to ensure perfect circular shape */
+.card-img-top[src*="me.png"] {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 140px;
+  height: 140px;
+  margin: 12px auto;
+  display: block;
+}
+
 .card-title { font-family: var(--font-display); font-weight: 600; color: #3c2f2f; letter-spacing: .5px; }
 .list-group-item { font-family: var(--font-body); font-size: .95rem; background: #fffaf2; }
 .list-group-item strong { color: #5d4037; font-weight: 600; }

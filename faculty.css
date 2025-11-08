@@ -25,14 +25,26 @@ header p {
 }
 
 .back-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #f0e6d2;
-  text-decoration: none;
+  background: linear-gradient(135deg, #5d4037, #8b6f47);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
   font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Garamond', serif;
 }
 .back-link:hover {
-  text-decoration: underline;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);
+}
+
+.back-link:active {
+  transform: translateY(0);
 }
 
 /* Faculty card grid */
