@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions - Hogwarts School of Witchcraft and Wizardry</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="admissions.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Hogwarts_crest.png" alt="Hogwarts Crest" style="height:48px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#admissionsNavbar" aria-controls="admissionsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="admissionsNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#houses" id="admissionsHouses" role="button" data-bs-toggle="dropdown" aria-expanded="false">Houses</a>
+            <ul class="dropdown-menu" aria-labelledby="admissionsHouses">
+              <li><a class="dropdown-item" href="gryffindor.html">Gryffindor</a></li>
+              <li><a class="dropdown-item" href="slytherin.html">Slytherin</a></li>
+              <li><a class="dropdown-item" href="ravenclaw.html">Ravenclaw</a></li>
+              <li><a class="dropdown-item" href="hufflepuff.html">Hufflepuff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="credits.html">Credits</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="admissions-hero">
+    <h1>Join the Legacy of Hogwarts</h1>
+    <p>Begin your magical journey at the world's most prestigious school of witchcraft and wizardry</p>
+  </div>
+
+  <div class="admissions-content">
+    <!-- Programs Section -->
+    <section class="admissions-section">
+      <h2>📚 Academic Programs</h2>
+      <div class="programs-grid">
+        <div class="program-card">
+          <h3>Core Magical Studies</h3>
+          <ul>
+            <li>Transfiguration</li>
+            <li>Charms</li>
+            <li>Potions</li>
+            <li>Defence Against the Dark Arts</li>
+            <li>Herbology</li>
+            <li>Astronomy</li>
+            <li>History of Magic</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <h3>Advanced Electives</h3>
+          <ul>
+            <li>Arithmancy</li>
+            <li>Ancient Runes</li>
+            <li>Care of Magical Creatures</li>
+            <li>Divination</li>
+            <li>Muggle Studies</li>
+            <li>Alchemy (N.E.W.T. level)</li>
+            <li>Apparition (6th year+)</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <h3>Duration & Levels</h3>
+          <ul>
+            <li><strong>Years 1-5:</strong> Foundation Studies</li>
+            <li><strong>Year 5:</strong> O.W.L. Examinations</li>
+            <li><strong>Years 6-7:</strong> N.E.W.T. Level</li>
+            <li><strong>Year 7:</strong> N.E.W.T. Examinations</li>
+            <li>Total Duration: 7 Years</li>
+            <li>Term: September - June</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="admissions-section facilities-section">
+      <h2>🏰 World-Class Facilities</h2>
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="facility-icon">📖</div>
+          <h3>Library</h3>
+          <p>Over 10,000 volumes including the Restricted Section for advanced students. Access to rare manuscripts and magical texts.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🧪</div>
+          <h3>Potion Laboratories</h3>
+          <p>State-of-the-art dungeons equipped with the finest cauldrons and ingredient storage for practical learning.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🏟️</div>
+          <h3>Quidditch Stadium</h3>
+          <p>Professional-grade pitch with seating for spectators. Inter-house matches and training facilities available.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🌿</div>
+          <h3>Greenhouses</h3>
+          <p>Seven greenhouses housing rare and dangerous plants from around the magical world for Herbology studies.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🍽️</div>
+          <h3>Great Hall</h3>
+          <p>Enchanted ceiling, house tables, and daily feasts prepared by house-elves. Central hub for school gatherings.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🏡</div>
+          <h3>Common Rooms</h3>
+          <p>Exclusive house common rooms with fireplaces, study areas, and dormitories. Safe and comfortable living spaces.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🌲</div>
+          <h3>Forbidden Forest</h3>
+          <p>Supervised access for Care of Magical Creatures classes. Home to centaurs, unicorns, and other magical beings.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🏥</div>
+          <h3>Hospital Wing</h3>
+          <p>24/7 medical care provided by qualified medi-witches. Treatment for magical maladies and injuries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="admissions-section benefits-section">
+      <h2>✨ Benefits & Opportunities</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>🎓 World-Recognized Qualifications</h3>
+          <p>O.W.L. and N.E.W.T. certifications accepted by magical institutions and employers worldwide.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🏆 House System</h3>
+          <p>Develop leadership, teamwork, and lifelong friendships through our unique four-house system.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🦉 Owl Post Service</h3>
+          <p>Free owl post delivery to stay connected with family. School owls available for student use.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🎭 Extracurricular Activities</h3>
+          <p>Join clubs including Gobstones, Wizard Chess, Dueling Club, and the Frog Choir.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🏅 Quidditch Program</h3>
+          <p>Competitive inter-house league with opportunities for professional scouts to observe talented players.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>👨‍🏫 Expert Faculty</h3>
+          <p>Learn from accomplished witches and wizards who are leaders in their magical disciplines.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🛡️ Safety & Security</h3>
+          <p>Protected by powerful enchantments, defensive spells, and supervised by experienced staff.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🌟 Career Guidance</h3>
+          <p>Personal counseling for career paths including Auror training, Healing, Ministry positions, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="admissions-section application-section">
+      <h2>📜 Application Form</h2>
+      <p class="form-intro">Complete the form below to apply for admission to Hogwarts School of Witchcraft and Wizardry. All fields marked with * are required.</p>
+      
+      <form id="admissionForm" class="admission-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dateOfBirth">Date of Birth *</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+          </div>
+          <div class="form-group">
+            <label for="bloodStatus">Blood Status *</label>
+            <select id="bloodStatus" name="bloodStatus" required>
+              <option value="">Select...</option>
+              <option value="pureblood">Pure-blood</option>
+              <option value="halfblood">Half-blood</option>
+              <option value="muggleborn">Muggle-born</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="parentGuardian">Parent/Guardian Name *</label>
+          <input type="text" id="parentGuardian" name="parentGuardian" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Owl Post/Email Address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Floo Network/Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Home Address *</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="wandDetails">Wand Details (if already obtained)</label>
+          <input type="text" id="wandDetails" name="wandDetails" placeholder="e.g., 11 inches, Phoenix feather, Holly" />
+        </div>
+
+        <div class="form-group">
+          <label for="magicalAbilities">Known Magical Abilities or Special Talents</label>
+          <textarea id="magicalAbilities" name="magicalAbilities" rows="3" placeholder="Describe any magical abilities, talents, or experiences..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="housePreference">House Preference (Optional)</label>
+          <select id="housePreference" name="housePreference">
+            <option value="">No Preference - Let the Sorting Hat Decide</option>
+            <option value="gryffindor">Gryffindor</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="hufflepuff">Hufflepuff</option>
+          </select>
+          <small>Note: The Sorting Hat makes the final decision based on your qualities and values.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="medicalConditions">Medical Conditions or Allergies</label>
+          <textarea id="medicalConditions" name="medicalConditions" rows="2" placeholder="Please list any medical conditions, allergies, or special requirements..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="previousEducation">Previous Magical Education (if any)</label>
+          <textarea id="previousEducation" name="previousEducation" rows="2" placeholder="List any previous magical schools or home tutoring..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="interests">Interests & Extracurricular Preferences</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="quidditch" /> Quidditch</label>
+            <label><input type="checkbox" name="interests" value="dueling" /> Dueling Club</label>
+            <label><input type="checkbox" name="interests" value="chess" /> Wizard Chess</label>
+            <label><input type="checkbox" name="interests" value="gobstones" /> Gobstones</label>
+            <label><input type="checkbox" name="interests" value="choir" /> Frog Choir</label>
+            <label><input type="checkbox" name="interests" value="creatures" /> Magical Creatures</label>
+            <label><input type="checkbox" name="interests" value="astronomy" /> Astronomy Club</label>
+            <label><input type="checkbox" name="interests" value="potions" /> Potions Club</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="essay">Personal Statement *</label>
+          <textarea id="essay" name="essay" rows="6" required placeholder="Tell us why you want to attend Hogwarts and what you hope to achieve... (minimum 100 words)"></textarea>
+          <small id="wordCount">Word count: 0</small>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="terms" name="terms" required />
+            I agree to abide by the rules and regulations of Hogwarts School of Witchcraft and Wizardry *
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="parentalConsent" name="parentalConsent" required />
+            Parental/Guardian consent for enrollment and participation in magical education *
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <section class="admissions-section info-section">
+      <h2>ℹ️ Important Information</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Application Deadline</h3>
+          <p>Applications are accepted year-round. Admission letters are sent via owl post in late July for the upcoming school year.</p>
+        </div>
+        <div class="info-card">
+          <h3>Eligibility</h3>
+          <p>Students must be 11 years old by September 1st of the enrollment year and possess magical abilities.</p>
+        </div>
+        <div class="info-card">
+          <h3>Tuition</h3>
+          <p>Hogwarts is funded by the Ministry of Magic. No tuition fees are required. Financial assistance available for supplies.</p>
+        </div>
+        <div class="info-card">
+          <h3>Required Supplies</h3>
+          <p>Upon acceptance, students will receive a detailed list of required books, equipment, and uniform from Diagon Alley.</p>
+        </div>
+      </div>
+    </section>
+
+    <a href="index.html" class="back-link">← Back to Hogwarts Home</a>
+  </div>
+
+  <footer class="bg-dark text-light fixed-bottom py-2">
+    <div class="container text-center" style="font-size:0.9em;">© 2025 Hogwarts School. All spells reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

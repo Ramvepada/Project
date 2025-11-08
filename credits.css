@@ -1,0 +1,15 @@
+.credits-header { background: linear-gradient(135deg, #3c2f2f, #5d4037); color: #fff; padding: 60px 20px; text-align: center; }
+.credits-content { padding: 40px 20px; }
+
+/* Bootstrap card refinements */
+.card { border: 2px solid #3c2f2f; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg,#fffdf6,#fff6e3); }
+.card-img-top { height: 160px; object-fit: contain; padding: 12px; background: #fff; }
+.card-title { font-family: var(--font-display); font-weight: 600; color: #3c2f2f; letter-spacing: .5px; }
+.list-group-item { font-family: var(--font-body); font-size: .95rem; background: #fffaf2; }
+.list-group-item strong { color: #5d4037; font-weight: 600; }
+.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,.25); transform: translateY(-4px); transition: .35s ease; }
+.card { transition: .35s ease; }
+
+@media (max-width: 576px) {
+  .card-img-top { height: 120px; }
+}
