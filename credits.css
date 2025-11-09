@@ -3,17 +3,17 @@
 
 /* Bootstrap card refinements */
 .card { border: 2px solid #3c2f2f; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg,#fffdf6,#fff6e3); }
-.card-img-top { height: 160px; object-fit: contain;  padding: 12px; background: #fff; }
-
-/* Specific styling for me.png to ensure perfect circular shape */
-.card-img-top[src*="me.png"] {
+/* Make all credit images circular thumbnails */
+.card-img-top { 
+  background: #fff; 
+  padding: 12px; 
   border-radius: 50%;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
-  width: 140px;
-  height: 140px;
-  margin: 12px auto;
-  display: block;
+  object-fit: cover; 
+  aspect-ratio: 1 / 1; 
+  width: 140px; 
+  height: 140px; 
+  margin: 12px auto; 
+  display: block; 
 }
 
 .card-title { font-family: var(--font-display); font-weight: 600; color: #3c2f2f; letter-spacing: .5px; }
@@ -23,5 +23,5 @@
 .card { transition: .35s ease; }
 
 @media (max-width: 576px) {
-  .card-img-top { height: 120px; }
+  .card-img-top { width: 120px; height: 120px; }
 }
