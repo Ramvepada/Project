@@ -1,27 +1,95 @@
-.credits-header { background: linear-gradient(135deg, #3c2f2f, #5d4037); color: #fff; padding: 60px 20px; text-align: center; }
-.credits-content { padding: 40px 20px; }
+/* ============================================================================
+   CREDITS PAGE STYLES
+   ============================================================================
+   This page displays contributor credits with circular profile images.
+   Uses Bootstrap cards with custom styling for a professional look.
+   ========================================================================== */
 
-/* Bootstrap card refinements */
-.card { border: 2px solid #3c2f2f; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg,#fffdf6,#fff6e3); }
-/* Make all credit images circular thumbnails */
-.card-img-top { 
-  background: #fff; 
-  padding: 12px; 
-  border-radius: 50%;
-  object-fit: cover; 
-  aspect-ratio: 1 / 1; 
-  width: 140px; 
-  height: 140px; 
-  margin: 12px auto; 
-  display: block; 
+/* ============================================================================
+   HEADER SECTION
+   ========================================================================== */
+/* Page header with gradient background */
+.credits-header { 
+  background: linear-gradient(135deg, #3c2f2f, #5d4037); /* Brown gradient */
+  color: #fff;                                     /* White text */
+  padding: 60px 20px;                              /* Vertical and horizontal padding */
+  text-align: center;                              /* Center all content */
 }
 
-.card-title { font-family: var(--font-display); font-weight: 600; color: #3c2f2f; letter-spacing: .5px; }
-.list-group-item { font-family: var(--font-body); font-size: .95rem; background: #fffaf2; }
-.list-group-item strong { color: #5d4037; font-weight: 600; }
-.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,.25); transform: translateY(-4px); transition: .35s ease; }
-.card { transition: .35s ease; }
+/* ============================================================================
+   MAIN CONTENT WRAPPER
+   ========================================================================== */
+/* Content area containing all credit cards */
+.credits-content { 
+  padding: 40px 20px;                              /* Internal padding */
+}
 
+/* ============================================================================
+   CARD STYLING
+   ========================================================================== */
+/* Individual contributor cards with gradient background */
+.card { 
+  border: 2px solid #3c2f2f;                       /* Dark brown border */
+  border-radius: 12px;                             /* Rounded corners */
+  overflow: hidden;                                /* Clip content to rounded corners */
+  background: linear-gradient(180deg,#fffdf6,#fff6e3); /* Light parchment gradient */
+  transition: .35s ease;                           /* Smooth transition for hover */
+}
+
+/* Hover effect - lift card and add shadow */
+.card:hover { 
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);          /* Large drop shadow */
+  transform: translateY(-4px);                     /* Move up 4px */
+  transition: .35s ease;                           /* Smooth animation */
+}
+
+/* ============================================================================
+   CIRCULAR PROFILE IMAGES
+   ========================================================================== */
+/* Circular profile images for each contributor */
+.card-img-top { 
+  background: #fff;                                /* White background behind image */
+  padding: 12px;                                   /* Padding creates white ring effect */
+  border-radius: 50%;                              /* Fully circular (50% rounds all corners) */
+  object-fit: cover;                               /* Crop image to fill circle */
+  aspect-ratio: 1 / 1;                             /* Perfect square ratio (1:1) */
+  width: 140px;                                    /* Fixed width */
+  height: 140px;                                   /* Fixed height (matches width) */
+  margin: 12px auto;                               /* Center horizontally with spacing */
+  display: block;                                  /* Block element for margin auto */
+}
+
+/* ============================================================================
+   CARD TEXT STYLING
+   ========================================================================== */
+/* Contributor name */
+.card-title { 
+  font-family: var(--font-display);                /* Display font (Cinzel) */
+  font-weight: 600;                                /* Semi-bold */
+  color: #3c2f2f;                                  /* Dark brown text */
+  letter-spacing: .5px;                            /* Slight letter spacing */
+}
+
+/* List items (Role, Contribution, etc.) */
+.list-group-item { 
+  font-family: var(--font-body);                   /* Body font (EB Garamond) */
+  font-size: .95rem;                               /* Slightly smaller text */
+  background: #fffaf2;                             /* Very light parchment background */
+}
+
+/* Bold labels in list items (e.g., "Role:", "Contribution:") */
+.list-group-item strong { 
+  color: #5d4037;                                  /* Brown text */
+  font-weight: 600;                                /* Semi-bold */
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN - MOBILE
+   ========================================================================== */
+/* Smaller profile images on small screens */
 @media (max-width: 576px) {
-  .card-img-top { width: 120px; height: 120px; }
+  .card-img-top { 
+    width: 120px;                                  /* Reduce from 140px */
+    height: 120px;                                 /* Keep circular (match width) */
+  }
 }

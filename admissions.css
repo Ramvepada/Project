@@ -1,220 +1,299 @@
+/* ============================================================================
+   ADMISSIONS PAGE STYLES
+   ============================================================================
+   This page contains the application form for prospective Hogwarts students.
+   Includes hero section, application form, and informational cards.
+   ========================================================================== */
+
+/* ============================================================================
+   HERO SECTION
+   ========================================================================== */
+/* Large banner at top of admissions page */
 .admissions-hero {
-  background: linear-gradient(135deg, #3c2f2f, #5d4037, #8b6f47);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #3c2f2f, #5d4037, #8b6f47); /* Brown gradient */
+  color: white;                                    /* White text */
+  text-align: center;                              /* Center all content */
+  padding: 80px 20px;                              /* Large vertical padding */
 }
 
+/* Main heading "Apply to Hogwarts" */
 .admissions-hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.8em;                                /* Very large text */
+  margin-bottom: 15px;                             /* Space below */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    /* Dark text shadow for depth */
 }
 
+/* Description paragraph under heading */
 .admissions-hero p {
-  font-size: 1.3em;
-  margin-top: 10px;
+  font-size: 1.3em;                                /* Larger text */
+  margin-top: 10px;                                /* Space above */
 }
 
+/* ============================================================================
+   MAIN CONTENT WRAPPER
+   ========================================================================== */
+/* Container for form and info cards */
 .admissions-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  max-width: 1200px;                               /* Maximum width */
+  margin: 0 auto;                                  /* Center horizontally */
+  padding: 40px 20px;                              /* Internal padding */
 }
 
-/* Application Form */
+/* ============================================================================
+   APPLICATION FORM SECTION
+   ========================================================================== */
+/* Background wrapper for entire form */
 .application-section {
-  background: linear-gradient(135deg, #fff9f0, #ffffff);
-  border: 3px solid #8b6f47;
+  background: linear-gradient(135deg, #fff9f0, #ffffff); /* Light gradient */
+  border: 3px solid #8b6f47;                       /* Gold border */
 }
 
+/* Introductory text above form */
 .form-intro {
-  text-align: center;
-  color: #5d4037;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-  line-height: 1.6;
+  text-align: center;                              /* Center text */
+  color: #5d4037;                                  /* Brown text */
+  font-size: 1.1em;                                /* Slightly larger */
+  margin-bottom: 30px;                             /* Space below */
+  line-height: 1.6;                                /* Readable line height */
 }
 
+/* Main form container */
 .admission-form {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px;                                /* Maximum width for readability */
+  margin: 0 auto;                                  /* Center horizontally */
 }
 
+/* ============================================================================
+   FORM LAYOUT
+   ========================================================================== */
+/* Two-column grid for side-by-side fields (First/Last Name, etc.) */
 .form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 0;
+  display: grid;                                   /* CSS grid layout */
+  grid-template-columns: 1fr 1fr;                  /* Two equal columns */
+  gap: 20px;                                       /* Space between columns */
+  margin-bottom: 0;                                /* No extra bottom margin */
 }
 
+/* Each form field group (label + input) */
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 25px;                             /* Space between fields */
 }
 
+/* ============================================================================
+   FORM LABELS
+   ========================================================================== */
+/* Field labels (Name, Email, etc.) */
 .form-group label {
-  display: block;
-  color: #3c2f2f;
-  font-weight: bold;
-  margin-bottom: 8px;
-  font-size: 1em;
+  display: block;                                  /* Full width */
+  color: #3c2f2f;                                  /* Dark brown text */
+  font-weight: bold;                               /* Bold text */
+  margin-bottom: 8px;                              /* Space below label */
+  font-size: 1em;                                  /* Normal text size */
 }
 
+/* ============================================================================
+   FORM INPUT FIELDS
+   ========================================================================== */
+/* All text inputs, email, phone, date, select dropdowns, and textareas */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
 .form-group input[type="date"],
 .form-group select,
 .form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #d4c4a8;
-  border-radius: 6px;
-  font-family: 'Garamond', serif;
-  font-size: 1em;
-  transition: border-color 0.3s ease;
-  box-sizing: border-box;
+  width: 100%;                                     /* Full width of container */
+  padding: 12px;                                   /* Internal padding */
+  border: 2px solid #d4c4a8;                       /* Light brown border */
+  border-radius: 6px;                              /* Rounded corners */
+  font-family: 'Garamond', serif;                  /* Match page font */
+  font-size: 1em;                                  /* Normal text size */
+  transition: border-color 0.3s ease;              /* Smooth border color change */
+  box-sizing: border-box;                          /* Include padding in width */
 }
 
+/* ============================================================================
+   INPUT FOCUS STATES
+   ========================================================================== */
+/* When user clicks into a field */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: #8b6f47;
-  box-shadow: 0 0 5px rgba(139, 111, 71, 0.3);
+  outline: none;                                   /* Remove default browser outline */
+  border-color: #8b6f47;                           /* Gold border when focused */
+  box-shadow: 0 0 5px rgba(139, 111, 71, 0.3);    /* Subtle glow effect */
 }
 
+/* ============================================================================
+   HELPER TEXT
+   ========================================================================== */
+/* Small text under form fields (e.g., "Must be 11 years old") */
 .form-group small {
-  display: block;
-  margin-top: 5px;
-  color: #8b6f47;
-  font-size: 0.9em;
-  font-style: italic;
+  display: block;                                  /* Own line */
+  margin-top: 5px;                                 /* Space above */
+  color: #8b6f47;                                  /* Gold text */
+  font-size: 0.9em;                                /* Smaller text */
+  font-style: italic;                              /* Italic text */
 }
 
+/* ============================================================================
+   CHECKBOX GROUPS
+   ========================================================================== */
+/* Grid for multiple checkboxes (e.g., magical abilities) */
 .checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-  margin-top: 10px;
+  display: grid;                                   /* CSS grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Auto columns */
+  gap: 12px;                                       /* Space between items */
+  margin-top: 10px;                                /* Space above */
 }
 
+/* Labels for checkboxes in grid */
 .checkbox-group label {
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #5d4037;
+  font-weight: normal;                             /* Not bold like main labels */
+  display: flex;                                   /* Flexbox for alignment */
+  align-items: center;                             /* Vertically center */
+  gap: 8px;                                        /* Space between checkbox and text */
+  color: #5d4037;                                  /* Brown text */
 }
 
+/* Checkbox inputs in grid */
 .checkbox-group input[type="checkbox"] {
-  width: auto;
-  margin: 0;
+  width: auto;                                     /* Not full width like text inputs */
+  margin: 0;                                       /* No margin */
 }
 
+/* Individual checkboxes outside grid */
 .form-group input[type="checkbox"] {
-  width: auto;
-  margin-right: 8px;
+  width: auto;                                     /* Not full width */
+  margin-right: 8px;                               /* Space after checkbox */
 }
 
+/* Labels that contain checkboxes (e.g., Terms & Conditions) */
 .form-group label:has(input[type="checkbox"]) {
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  cursor: pointer;
+  display: flex;                                   /* Flexbox for alignment */
+  align-items: center;                             /* Vertically center */
+  font-weight: normal;                             /* Not bold */
+  cursor: pointer;                                 /* Show pointer on hover */
 }
 
+/* ============================================================================
+   WORD COUNTER
+   ========================================================================== */
+/* Dynamic word count display (e.g., "50/500 words") */
 #wordCount {
-  color: #8b6f47;
-  font-weight: bold;
+  color: #8b6f47;                                  /* Gold text */
+  font-weight: bold;                               /* Bold text */
 }
 
+/* ============================================================================
+   SUBMIT BUTTON
+   ========================================================================== */
+/* "Submit Application" button */
 .submit-btn {
-  background: linear-gradient(135deg, #5d4037, #8b6f47);
-  color: white;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 20px;
-  width: 100%;
-  font-family: 'Garamond', serif;
+  background: linear-gradient(135deg, #5d4037, #8b6f47); /* Brown gradient */
+  color: white;                                    /* White text */
+  padding: 15px 40px;                              /* Internal padding */
+  border: none;                                    /* No border */
+  border-radius: 8px;                              /* Rounded corners */
+  font-size: 1.2em;                                /* Larger text */
+  font-weight: bold;                               /* Bold text */
+  cursor: pointer;                                 /* Show pointer on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin-top: 20px;                                /* Space above */
+  width: 100%;                                     /* Full width */
+  font-family: 'Garamond', serif;                  /* Match page font */
 }
 
+/* Hover effect - lift button up */
 .submit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);
+  transform: translateY(-3px);                     /* Move up 3px */
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);   /* Larger shadow */
 }
 
+/* Active/click effect - push button down */
 .submit-btn:active {
-  transform: translateY(0);
+  transform: translateY(0);                        /* Return to normal position */
 }
 
+/* ============================================================================
+   FORM VALIDATION MESSAGES
+   ========================================================================== */
+/* Container for success/error messages */
 .form-message {
-  text-align: center;
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1em;
+  text-align: center;                              /* Center text */
+  margin-top: 20px;                                /* Space above */
+  padding: 15px;                                   /* Internal padding */
+  border-radius: 6px;                              /* Rounded corners */
+  font-weight: bold;                               /* Bold text */
+  font-size: 1.1em;                                /* Larger text */
 }
 
+/* Success message (green) */
 .form-message.success {
-  background: #d4edda;
-  color: #155724;
-  border: 2px solid #c3e6cb;
+  background: #d4edda;                             /* Light green background */
+  color: #155724;                                  /* Dark green text */
+  border: 2px solid #c3e6cb;                       /* Green border */
 }
 
+/* Error message (red) */
 .form-message.error {
-  background: #f8d7da;
-  color: #721c24;
-  border: 2px solid #f5c6cb;
+  background: #f8d7da;                             /* Light red background */
+  color: #721c24;                                  /* Dark red text */
+  border: 2px solid #f5c6cb;                       /* Red border */
 }
 
-/* Info Section */
+/* ============================================================================
+   INFORMATION CARDS SECTION
+   ========================================================================== */
+/* Grid container for info cards (Tuition, Housing, etc.) */
 .info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  display: grid;                                   /* CSS grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto columns, min 250px */
+  gap: 20px;                                       /* Space between cards */
+  margin-top: 30px;                                /* Space above */
 }
 
+/* Individual information card */
 .info-card {
-  background: #fff9f0;
-  border: 2px solid #d4c4a8;
-  border-radius: 8px;
-  padding: 20px;
+  background: #fff9f0;                             /* Light parchment background */
+  border: 2px solid #d4c4a8;                       /* Light brown border */
+  border-radius: 8px;                              /* Rounded corners */
+  padding: 20px;                                   /* Internal padding */
 }
 
+/* Card heading (e.g., "Tuition & Fees") */
 .info-card h3 {
-  color: #3c2f2f;
-  margin-bottom: 10px;
-  font-size: 1.3em;
-  border-bottom: 2px solid #8b6f47;
-  padding-bottom: 8px;
+  color: #3c2f2f;                                  /* Dark brown text */
+  margin-bottom: 10px;                             /* Space below */
+  font-size: 1.3em;                                /* Larger text */
+  border-bottom: 2px solid #8b6f47;                /* Gold underline */
+  padding-bottom: 8px;                             /* Space before underline */
 }
 
+/* Card paragraph text */
 .info-card p {
-  color: #5d4037;
-  line-height: 1.6;
+  color: #5d4037;                                  /* Brown text */
+  line-height: 1.6;                                /* Readable line height */
 }
 
-/* Responsive Design */
+/* ============================================================================
+   RESPONSIVE DESIGN - MOBILE
+   ========================================================================== */
+/* Adjustments for screens smaller than 768px (tablets/phones) */
 @media (max-width: 768px) {
+  /* Smaller hero heading on mobile */
   .admissions-hero h1 {
-    font-size: 2em;
+    font-size: 2em;                                /* Reduce from 2.8em */
   }
 
+  /* Smaller hero paragraph on mobile */
   .admissions-hero p {
-    font-size: 1.1em;
+    font-size: 1.1em;                              /* Reduce from 1.3em */
   }
 
+  /* Stack form fields vertically on mobile */
   .form-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;                    /* Single column instead of two */
   }
 
-  /* Removed programs/facilities/benefits responsive rules (now global) */
+  /* Note: programs/facilities/benefits responsive rules removed (now in style.css) */
 }

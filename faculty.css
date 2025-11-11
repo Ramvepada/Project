@@ -1,101 +1,141 @@
-/* Base styles */
+/* ============================================================================
+   FACULTY PAGE STYLES
+   ============================================================================
+   This page displays all Hogwarts faculty members in a grid of cards.
+   Each card shows a photo, name, and subject taught.
+   ========================================================================== */
+
+/* Base body styling for faculty page */
 body {
-  margin: 0;
-  font-family: 'Garamond', serif;
-  background: url('images/parchment-bg.jpg') repeat;
-  color: #2c1b0f;
+  margin: 0;                                       /* Remove default margin */
+  font-family: 'Garamond', serif;                  /* Elegant serif font */
+  background: url('images/parchment-bg.jpg') repeat; /* Parchment texture */
+  color: #2c1b0f;                                  /* Dark brown text */
 }
 
-/* Header styling */
+/* ============================================================================
+   HEADER SECTION
+   ========================================================================== */
+/* Page header with title and description */
 header {
-  text-align: center;
-  background-color: #3c2f2f;
-  color: #f0e6d2;
-  padding: 30px 20px;
+  text-align: center;                              /* Center all content */
+  background-color: #3c2f2f;                       /* Dark brown background */
+  color: #f0e6d2;                                  /* Light parchment text */
+  padding: 30px 20px;                              /* Internal padding */
 }
 
+/* Main heading "Faculty Members" */
 header h1 {
-  margin-bottom: 10px;
-  font-size: 2.5em;
+  margin-bottom: 10px;                             /* Space below */
+  font-size: 2.5em;                                /* Large heading */
 }
 
+/* Description text under heading */
 header p {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.2em;                                /* Larger text */
+  margin-bottom: 10px;                             /* Space below */
 }
 
+/* ============================================================================
+   BACK TO HOME LINK
+   ========================================================================== */
+/* "Back to Hogwarts Home" button */
 .back-link {
-  background: linear-gradient(135deg, #5d4037, #8b6f47);
-  color: white;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 20px;
-  width: 100%;
-  font-family: 'Garamond', serif;
+  background: linear-gradient(135deg, #5d4037, #8b6f47); /* Brown gradient */
+  color: white;                                    /* White text */
+  padding: 15px 40px;                              /* Internal padding */
+  border: none;                                    /* No border */
+  border-radius: 8px;                              /* Rounded corners */
+  font-size: 1.2em;                                /* Larger text */
+  font-weight: bold;                               /* Bold text */
+  cursor: pointer;                                 /* Show pointer on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin-top: 20px;                                /* Space above */
+  width: 100%;                                     /* Full width */
+  font-family: 'Garamond', serif;                  /* Match page font */
 }
+
+/* Hover effect - lift button up */
 .back-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);
+  transform: translateY(-3px);                     /* Move up 3px */
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);   /* Larger shadow */
 }
 
+/* Active/click effect - push button down */
 .back-link:active {
-  transform: translateY(0);
+  transform: translateY(0);                        /* Return to normal position */
 }
 
-/* Faculty card grid */
+/* ============================================================================
+   FACULTY CARDS GRID
+   ========================================================================== */
+/* Main container for all faculty cards */
 .faculty-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 40px;
+  display: grid;                                   /* CSS grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto columns, min 300px */
+  gap: 30px;                                       /* Space between cards */
+  padding: 40px;                                   /* Padding around grid */
 }
 
-/* Individual card styling */
+/* ============================================================================
+   INDIVIDUAL FACULTY CARD
+   ========================================================================== */
+/* Each faculty member's card */
 .card {
-  background-color: #fdf6e3;
-  border: 2px solid #3c2f2f;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fdf6e3;                       /* Light parchment background */
+  border: 2px solid #3c2f2f;                       /* Dark brown border */
+  border-radius: 10px;                             /* Rounded corners */
+  padding: 20px;                                   /* Internal padding */
+  text-align: center;                              /* Center all content */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);        /* Drop shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect - slightly enlarge card */
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+  transform: scale(1.05);                          /* Grow to 105% size */
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);       /* Larger shadow */
 }
 
+/* Faculty member photo */
 .card img {
-  width: 100%;
-  height: 320px; /* taller to include more of the face */
-  object-fit: cover;
-  object-position: 50% 20%; /* bias toward top to avoid cutting off heads */
-  border-radius: 8px;
-  margin-bottom: 15px;
+  width: 100%;                                     /* Full width of card */
+  height: 320px;                                   /* Tall height to show full face */
+  object-fit: cover;                               /* Crop to fit */
+  object-position: 50% 20%;                        /* Focus on top (face) not center */
+  border-radius: 8px;                              /* Rounded corners */
+  margin-bottom: 15px;                             /* Space below image */
 }
 
+/* Faculty member name */
 .card h2 {
-  margin: 10px 0 5px;
-  font-size: 1.5em;
-  color: #3c2f2f;
+  margin: 10px 0 5px;                              /* Vertical margins */
+  font-size: 1.5em;                                /* Large text */
+  color: #3c2f2f;                                  /* Dark brown text */
 }
 
+/* Subject taught (e.g., "Transfiguration", "Potions") */
 .card p {
-  margin: 5px 0;
-  font-size: 1em;
+  margin: 5px 0;                                   /* Vertical margins */
+  font-size: 1em;                                  /* Normal text size */
 }
 
-/* Footer styling */
+/* ============================================================================
+   FOOTER
+   ========================================================================== */
 footer {
-  background-color: #3c2f2f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+  background-color: #3c2f2f;                       /* Dark brown background */
+  color: white;                                    /* White text */
+  text-align: center;                              /* Center text */
+  padding: 20px;                                   /* Internal padding */
+  font-size: 0.9em;                                /* Slightly smaller text */
+}
+
+/* ============================================================================
+   RELOCATED INLINE STYLES
+   ========================================================================== */
+/* Container for the back link at bottom of page */
+.back-link-container {
+  text-align: center;                              /* Center the link */
+  margin-top: 30px;                                /* Space above */
 }
