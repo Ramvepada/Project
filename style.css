@@ -774,7 +774,9 @@ footer.bg-dark .container {
 
 /* NAVBAR - Hogwarts crest image height (used on all pages) */
 .navbar-brand img[src*="Hogwarts_crest"] {
-  height: 48px;                                    /* Fixed height for crest logo */
+  height: 40px;                                    /* Fixed height for crest logo (reduced from 48px) */
+  width: auto;                                     /* Maintain aspect ratio */
+  max-width: 40px;                                 /* Prevent excessive width */
 }
 
 /* FOOTER - Copyright text size (used on all pages) */
