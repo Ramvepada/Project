@@ -1,11 +1,14 @@
-# ce8
-Class Evaluation - 8 : Hogwarts Website Using Bootstrap
+# Project
+Team Project: Hogwarts Website Using Bootstrap
 
-<h1 align="center">🏰 Class Evaluation - 8</h1>
+<h1 align="center">🏰 Team Project </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square" alt="Status Badge">
   <img src="https://img.shields.io/badge/ID-04325105101038-blue?style=flat-square" alt="ID Badge">
+  <img src="https://img.shields.io/badge/ID-04325105101032-blue?style=flat-square" alt="ID Badge">
+  <img src="https://img.shields.io/badge/ID-04325105101021-blue?style=flat-square" alt="ID Badge">
+  <img src="https://img.shields.io/badge/ID-04325105101008-blue?style=flat-square" alt="ID Badge">
 </p>
 
 ---
