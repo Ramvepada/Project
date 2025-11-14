@@ -61,36 +61,44 @@ This website is a tribute to the magical world of Harry Potter, featuring:
 ## 🖼️ Preview / Screenshots
 
 [🔗 Live Site](https://ramvepada.github.io/Project)
-
+*Navigation Bar*
 ![Project Preview](images/Navigation%20bar.PNG)
+*Home Page*
 ![Project Preview](images/Home-1.PNG)
 ![Project Preview](images/Home-2.PNG)
 ![Project Preview](images/Home-3.PNG)
 ![Project Preview](images/Home-4.PNG)
 ![Project Preview](images/Home-5.PNG)
+*House - Gryffindor*
 ![Project Preview](images/Gryff-1.PNG)
 ![Project Preview](images/Gryff-2.PNG)
 ![Project Preview](images/Gryff-3.PNG)
 ![Project Preview](images/Gryff-4.PNG)
+*House - Slytherin*
 ![Project Preview](images/sly-1.PNG)
 ![Project Preview](images/sly-2.PNG)
 ![Project Preview](images/sly-3.PNG)
 ![Project Preview](images/sly-4.PNG)
+*House - Hufflepuff*
 ![Project Preview](images/Huff-1.PNG)
 ![Project Preview](images/Huff-2.PNG)
 ![Project Preview](images/Huff-3.PNG)
 ![Project Preview](images/Huff-4.PNG)
+*House - Ravenclaw*
 ![Project Preview](images/Raven-1.PNG)
 ![Project Preview](images/Raven-2.PNG)
 ![Project Preview](images/Raven-3.PNG)
 ![Project Preview](images/Raven-4.PNG)
+*Faculty List*
 ![Project Preview](images/Faculty-1.PNG)
+*Admission Page*
 ![Project Preview](images/Admisson-1.PNG)
 ![Project Preview](images/Admisson-2.PNG)
 ![Project Preview](images/Admisson-3.PNG)
 ![Project Preview](images/Admisson-4.PNG)
+*Credits Page*
 ![Project Preview](images/Credit-1.PNG)
-*More screenshots to be added*
+
 
 ---
 
